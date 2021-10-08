@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+    <body>
+        <!-- VIEW-->
+        <div id="app">
+            <h3 v-show="tab==1">首页</h3>
+            <h3 v-show="tab==2">个人中心</h3>
+            <h3 v-show="tab==3">新闻</h3>
+            <button @click="TabChange" data-id="1">首页</button>
+            <button @click="TabChange" data-id="2">个人中心</button>
+            <button @click="TabChange" data-id="3">新闻</button>
+        </div>
+
+        <script type="text/javascript">
+            //console.log(Vue)
+            let app = new Vue({
+                el:"#app",
+                // Model
+                data:{
+                    tab: "1",
+                },
+                methods: {
+                    TabChange:function(e){
+                        console.log(e)
+                        let tabid = e.target.dataset.id
+                        this.tab = tabid
+                    }
+                },
+            })
+            
+        </script>
+
+    </body>
+</html>

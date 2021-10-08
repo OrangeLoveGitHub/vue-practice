@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+    <body>
+        <!-- VIEW-->
+        <div id="app">
+            <h1>用户名: {{ username }}</h1>
+            <h3 v-if="isVip">用户类型: VIP</h3>
+            <!--v-if和v-else中间不能有其他元素！！！-->
+            <h3 v-else>用户类型: 普通用户</h3>
+            <hr>
+            <h1>用户允许登陆时间</h1>
+            <h3 v-if="age>18">你的允许登陆时间为: 8h</h3>
+            <h3 v-else-if="age>14">你的允许登陆时间为: 10h</h3>
+            <h3 v-else>你的允许登陆时间为: 18h</h3>
+        </div>
+
+        <script type="text/javascript">
+            //console.log(Vue)
+            let app = new Vue({
+                el:"#app",
+                // Model
+                data:{
+                    username: "lugo",
+                    isVip: false,
+                    age: 10
+                }
+            })
+            console.log(app)
+        </script>
+
+    </body>
+</html>
