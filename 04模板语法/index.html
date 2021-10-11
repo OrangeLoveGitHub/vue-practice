@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    #login{
+        background: skyblue;
+    }
+    #register{
+        background: palevioletred;
+    }
+
+    </style>
+
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+    <body>
+        <div id="app">
+            <h1>{{msg}}</h1>
+            <!---一次性插入，不再修改-->
+            <h1 v-once>{{msg}}</h1>
+            <h1>{{htmlTxt}}</h1>
+            <h1 v-html="htmlTxt"></h1>
+            <!---修改属性内容-->
+            <div :id="idname">
+            <h1>登陆</h1>
+            </div>
+            <!---表达式应用-->
+            <div>
+                {{firstname+lastename}}
+            </div>
+            <!-- 三元运算-->
+                {{isVip?"欢迎vip用户":"普通用户请充值"}}
+            <div>
+
+            <!--事件的绑定-->
+            <button v-on:click="changeBg">
+                改变背景
+            </button>
+            <button @click="changeBg">
+                改变背景--缩写
+            </button>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            var app = new Vue({
+                el: "#app",
+                data:{
+                    msg:"hello,vue",
+                    htmlTxt:"<span>hello,span</span>",
+                    idname: "login",
+                    firstname: "luuugo",
+                    lastename: "young",
+                    isVip: false
+                },
+                methods: {
+                    changeBg:function(){
+                        document.body.style.background = "skyblue"
+                    }
+                },
+                
+            })
+        </script>
+    </body>
+</html>
