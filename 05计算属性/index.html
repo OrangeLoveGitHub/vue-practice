@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+    <body>
+        <div id="app">
+            <!--一般情况下写法-->
+            <h1>{{firstname+lastname}}</h1>
+            <!--计算属性-->
+            <h1>{{fullname}}</h1>
+            <!--显示一个单词的逆序-->
+            <h1>{{ word.split("").reverse().join("")}}</h1>
+            <h1>{{reverseWord}}</h1>
+            <h1>循环偶数年龄</h1>
+            <ul>
+                <li v-for="item,index in oddStudent">
+                    <h1>{{item.studentName}}</h1>
+                    <h1>{{item.age}}</h1>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            var app = new Vue({
+                el:"#app",
+                data:{
+                    firstname:"lugooo",
+                    lastname:"young",
+                    word: "music",
+                    students:[
+                    {
+                        studentName:"hugo",
+                        age:18,
+                        school:"BNW",
+                        like: "code",
+                        image: "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhnrb.hinews.cn%2Fresfile%2F2014-03-31%2F011%2Fhn20140331_011b002.jpg&refer=http%3A%2F%2Fhnrb.hinews.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1636504469&t=52abef91da4353cc95a32d66a558e5d9"
+                    },
+                    {
+                        studentName:"lugo",
+                        age:29,
+                        school:"DNW"
+                    },                    
+                    {
+                        studentName:"kugo",
+                        age:38,
+                        school:"JNW"
+                    }
+                ]
+                },
+                
+                computed:{
+                    fullname:function(){
+                        console.log(this)
+                        //会将计算的结果缓存
+                        return this.firstname+this.lastname
+                    },
+                    reverseWord:function(){
+                        return this.word.split("").reverse().join("")
+                    },
+                    oddStudent:function(){
+                        let results = this.students.filter(
+                            (item,i)=>{
+                                return item.age%2==0
+                            })
+                            return results
+                    }
+
+                }
+            })
+        </script>
+    </body>
+</html>
