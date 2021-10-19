@@ -1,0 +1,23 @@
+#!groovy
+pipeline {
+    agent { label 'master-runner' }
+    // environment {
+    //     webhook_key = credentials('webhook_key')
+    // }
+
+    stages {
+        stage('Unit Test') {
+            steps {
+                echo 'Unit test'
+            }
+        }
+        stage('Code Build') {
+            when {
+                branch 'master'
+            }
+            steps {
+                echo 'Code Building'
+            }
+        }
+    }
+}
