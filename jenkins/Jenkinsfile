@@ -36,7 +36,7 @@ pipeline {
     post {
     success {
         sh """
-    curl -s -X POST https://hooks.slack.com/services/${webhook_key} \
+curl -s -X POST https://hooks.slack.com/services/${webhook_key} \
 -H 'Content-Type: application/json; charset=utf-8' \
 --data-binary @- << EOF
 {
@@ -45,7 +45,7 @@ pipeline {
 "icon_emoji": ":four_leaf_clover:",
 "text": "[${JOB_NAME}] 分支构建 success <${BUILD_URL}console|点击我查看>"
 }
- EOF
+EOF
         """
     }
     failure {
