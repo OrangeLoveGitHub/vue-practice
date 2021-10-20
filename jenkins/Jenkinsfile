@@ -33,7 +33,7 @@ pipeline {
     post {
     success {
         sh """
-        echo ${JOB_URL}
+        echo ${BUILD_URL}
         """
     }
     failure {
