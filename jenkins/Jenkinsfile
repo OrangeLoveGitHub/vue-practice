@@ -43,7 +43,7 @@ curl -s -X POST https://hooks.slack.com/services/${webhook_key} \
 "channel": "#jenkins-notice",
 "username": "Jenkins Notification",
 "icon_emoji": ":four_leaf_clover:",
-"text": "@Lu Yang\n[${JOB_NAME}] 分支构建 success <${BUILD_URL}console|点击我查看日志>"
+"text": "@U022M3MQJTZ\n[${JOB_NAME}] 分支构建 success <${BUILD_URL}console|点击我查看日志>"
 }
 EOF
         """
