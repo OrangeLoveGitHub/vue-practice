@@ -1,8 +1,8 @@
 #!/bin/bash
-if [[ "$1" -eq "success" ]]
+if [ "$1" == "success" ]
 then
     status='成功'
-elif [[ "$1" -eq "regression" ]]
+elif [ "$1" == "regression" ]
 then
     status='失败'
 else
