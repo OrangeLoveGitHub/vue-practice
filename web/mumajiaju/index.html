@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>木马美居</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="../lib/vue.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="page-wrapper">
+            <div class="app-header">
+                <div class="container clearfix">
+
+                    <div class="nav-left clearfix">
+                        <!-- 美克美家log -->
+                        <a href="#/" class="logo-box router-link-active">
+                            <div class="bg-logo abs abs-center"></div>
+                        </a>
+                        <!-- 首页这拦 -->
+                        <div class="nav-box">
+                            <div class="nav-item">
+                                <a href="#/" class="router-link-active">首页</a>
+                                <span class="icon-slash">·</span>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#/lifestyle" class>生活方式</a>
+                                <span class="icon-slash">·</span>
+                            </div>
+
+                            <div class="nav-item active">
+                                <a href="#/case" class="router-link-exact-active router-link-active"
+                                    aria-current="page">软装灵感</a>
+                                <span class="icon-slash">·</span>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#/product" class>所有产品</a>
+                                <span class="icon-slash">·</span>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#/shop" class>门店查询</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-right ckearfix">
+                        <div class="no-login">
+                            <a href="#/login" class="login-btn">登录</a>
+                            <a href="#/register" class="register-btn">注册</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="app-content">
+                <div class="page-case">
+                    <div class="section section-case-recommend">
+                        <div class="container">
+                            <div class="section section-case">
+                                <div class="container">
+                                    <div class="page-title" style="margin-bottom: 15px;">
+                                        <div class="oval"></div>
+                                        <div class="title">软装灵感</div>
+                                    </div>
+                                    <div class="img-box">
+                                        <img src="http://new.markorhome.com/static/img/bg.77fa86df.jpg" alt
+                                            style="width: 100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                mytext: "木马美居",
+            }
+        })
+    </script>
+
+</body>
+
+</html>

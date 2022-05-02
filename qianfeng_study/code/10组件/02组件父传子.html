@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../lib/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div style="background: yellow">根组件标题</div>
+        <narvbar myname="电影" :myright="false" :mytext="mytext"></narvbar>
+        <narvbar></narvbar>
+
+    </div>
+    <script>
+        Vue.component(
+            "narvbar", {
+                // props: ["myname", "myright"], //接受myname的属性，this.myname
+                // props: {
+                //     myname: String,
+                //     myright: Boolean,
+                // },
+                props: {
+                    myname: {
+                        type: String,
+                        default: "默认值"
+                    },
+                    myright: {
+                        type: Boolean,
+                        default: true,
+                    },
+                    mytext: {
+                        type: String,
+                        default: "",
+                    },
+                },
+                template: `
+                <div>
+                <button>left</button>
+                <span>{{myname}}--{{mytext}}</span>
+                <button v-show="myright">right</button>
+                    </div>
+                `
+            }
+        )
+        new Vue({
+            el: "#app",
+            data: {
+                mytext: "宿组件数据"
+            }
+        })
+    </script>
+</body>
+
+</html>

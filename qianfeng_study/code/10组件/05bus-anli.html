@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../lib/vue.js"></script>
+    <style>
+        .item {
+            overflow: hidden;
+            padding: 10px;
+            width: 400px;
+            border: 1px solid red;
+        }
+
+        .item img {
+            width: 100px;
+            float: left;
+        }
+
+        .film {
+            width: 100px;
+            float: left
+        }
+
+        .filminfo {
+            width: 300px;
+            min-height: 200px;
+            background: yellow;
+            position: fixed;
+            right: 50px;
+            top: 100px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <button @click="handleAjax">ajax</button>
+        <film-item v-for="item in filmlist" :key="item.filmId" :myitem="item"></film-item>
+        <film-detail></film-detail>
+    </div>
+    <script>
+        var bus = new Vue()
+        // bus.$on 监听 
+        // bus.$emit 发布， 
+        // bus.$on("lugo", () => {
+        //     console.log("bus内容1111111111")
+        // })
+
+        Vue.component("filmItem", {
+            props: ["myitem"],
+            template: `
+            <div class="item">
+                <ul>
+                    <li>
+                        <img :src="myitem.poster">
+                        {{myitem.name}}
+                        <div>
+                            <button @click="handleClick">详情</button>    
+                        </div>
+                        
+                    </li>
+                </ul>    
+            </div>
+            `,
+            methods: {
+                handleClick() {
+                    // console.log(this.myitem.synopsis)
+                    bus.$emit("lugo", this.myitem.synopsis)
+
+                }
+            }
+        })
+
+        Vue.component("filmDetail", {
+            // props: ["filmInfo"],
+
+            mounted() {
+                bus.$on("lugo", (data) => {
+                    console.log(data)
+                    this.info = data
+
+                })
+            },
+            data() {
+                return {
+                    info: ""
+                }
+
+
+            },
+            template: `
+            <div class="filminfo">
+            {{info}}
+            </div>
+            `
+
+        })
+        new Vue({
+            el: "#app",
+            data: {
+                filmlist: [],
+                // filmInfo: "",
+            },
+            methods: {
+                handleAjax() {
+                    fetch("../09过滤器/json/maizuo.json")
+                        .then(res => res.json())
+                        .then(res => {
+                            console.log(res.data.films)
+                            this.filmlist = res.data.films
+                        })
+                        .catch(err => {
+                            console.log(err)
+                        })
+                },
+                // handleEvent(data) {
+                //     console.log("父组件调用", data)
+                //     this.filmInfo = data
+                // }
+            }
+        })
+    </script>
+</body>
+
+</html>

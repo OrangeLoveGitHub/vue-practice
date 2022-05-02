@@ -1,0 +1,259 @@
+{
+    "status": 0,
+    "data": {
+        "films": [
+            {
+                "filmId": 5936,
+                "name": "我是真的讨厌异地恋",
+                "poster": "https://pic.maizuo.com/usr/movie/10e7be842fa87aae8f20c565ede789a1.jpg",
+                "actors": [
+                    {
+                        "name": "吴洋",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/82cbd1330d86c9976b8b15f50bf187d4.jpg@1246w_1246h_1l_0e"
+                    },
+                    {
+                        "name": "周男燊",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/74a24ea07e374455e71dcbcbdcfe32c0.jpg@1246w_1246h_1l_0e"
+                    },
+                    {
+                        "name": "任敏",
+                        "role": "赵一一",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/726e29fece19cb0084c244fab87d2ade.jpg@1246w_1246h_1l_0e"
+                    },
+                    {
+                        "name": "辛云来",
+                        "role": "许嘉树",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/d131e61678ef5a283ffab7f471876337.jpg@1246w_1246h_1l_0e"
+                    },
+                    {
+                        "name": "李孝谦",
+                        "role": "李唐",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/1851abbf262ae8b582812961a0e16435.jpg@1246w_1246h_1l_0e"
+                    }
+                ],
+                "director": "吴洋|周男燊",
+                "category": "爱情|青春|喜剧",
+                "synopsis": "要相信：熬过异地，就是一生。故事围绕赵一一（任敏 饰）和许嘉树（辛云来 饰）展开，高考之后，赵一一终于向暗恋多年的许嘉树表白，却阴差阳错开启一场异地恋。他们坚信：熬过异地，就是一生。可远距离恋爱的天然阻碍考验着他们，明明相爱，却不断缺席对方的生活。赛赫（陈宥维 饰）的出现以及闺蜜乔乔（周雨彤 饰）和李唐（李孝谦 饰）一波三折的爱情都让赵一一感触良多。当异地恋升级为异国恋，是继续坚持，还是一别两宽，各自成长的二人不得不面对自己内心的答案…",
+                "filmType": {
+                    "name": "2D",
+                    "value": 1
+                },
+                "nation": "中国大陆",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1651190400,
+                "timeType": 3,
+                "runtime": 100,
+                "item": {
+                    "name": "2D",
+                    "type": 1
+                },
+                "isPresale": false,
+                "isSale": false
+            },
+            {
+                "filmId": 5945,
+                "name": "出拳吧，妈妈",
+                "poster": "https://pic.maizuo.com/usr/movie/6feeed3643a96934a81d4c7c0b11dad5.jpg",
+                "actors": [
+                    {
+                        "name": "唐晓白",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/3bea1e7a05deafd209bc23e94317fb85.jpg@1246w_1246h_1l_0e"
+                    },
+                    {
+                        "name": "谭卓",
+                        "role": "白杨",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/8288750d0756972779198e28a8724808.jpg@1246w_1246h_1l_0e"
+                    },
+                    {
+                        "name": "田雨",
+                        "role": "沈浩",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/87dc54c2c4484f062724fef3e958f84c.jpg@1246w_1246h_1l_0e"
+                    },
+                    {
+                        "name": "田海蓉",
+                        "role": "白杨姐姐",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/39401ee8cb1cff5f5abc081ca4ebf4ef.jpg@1246w_1246h_1l_0e"
+                    },
+                    {
+                        "name": "郭唐维",
+                        "role": "小辉",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/2e691f02f4e926b5aaf653f619876670.jpg@1246w_1246h_1l_0e"
+                    }
+                ],
+                "director": "唐晓白",
+                "category": "亲情|励志|运动",
+                "synopsis": "丧到家的人生难道翻盘不出高光时刻了吗？白杨（谭卓饰演）是一个性格倔强、坚守内心原则的年轻妈妈；几年前因一时冲动失去所有、母子分离，孩子被迫交给姐姐（田海蓉饰演）扶养；直到遇见性格奇葩、舌毒心暖的男人沈浩（田雨饰演），在他的帮助下，白杨重新燃起了斗志，痛下决心夺回失去的一切。而前方等着白杨的，却完全超乎了她的想象……",
+                "filmType": {
+                    "name": "2D",
+                    "value": 1
+                },
+                "nation": "中国大陆",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1651276800,
+                "timeType": 3,
+                "runtime": 96,
+                "item": {
+                    "name": "2D",
+                    "type": 1
+                },
+                "isPresale": false,
+                "isSale": false
+            },
+            {
+                "filmId": 5904,
+                "name": "珠峰队长",
+                "poster": "https://pic.maizuo.com/usr/movie/e50ab3429a7a99964bd0307103241b3f.jpg",
+                "actors": [
+                    {
+                        "name": "苏拉王平",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/05be45da838f393a34ed61a92821187d.jpg"
+                    },
+                    {
+                        "name": "崔舟萍",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/e6c97b4b19e0a43359968c51af9716f6.jpg"
+                    },
+                    {
+                        "name": "小溪",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/965e2b23b595d7716edf8709bf74a60f.jpg"
+                    },
+                    {
+                        "name": "刘萍",
+                        "role": "演员",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/fd01a35554cdee9a66bc9c213cb7908c.jpg"
+                    },
+                    {
+                        "name": "吴曦",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/e2ff16e4fe08b281c109c59c21d4909e.jpg"
+                    }
+                ],
+                "director": "吴曦",
+                "category": "纪录片",
+                "synopsis": "每天生活两点一线的白领、卖掉自家小店的店主、背负沉重KPI的销售、在成功与失败间挣扎的创业者……8个普通人，带着各自的故事与梦想，在民间专业高山向导、队长苏拉王平的带领下，踏上了憧憬已久的珠峰之旅，也许，也是一次死亡之旅。他们在尼泊尔的珠峰南坡集结出发，穿越裂缝深不见底的恐怖冰川，攀上高达千米的蓝色冰壁，爬过山体岩石断面的“黄带”，朝着世界之巅一步步靠近。这支起初被外国队伍“看扁”的中国民间登山队，面对“窗口期”极短的恶劣天气和可能发生的冲顶“大堵车”，能否成为2019年全球第一支登顶珠峰的团队？本片是中国首部沉浸式体验攀登珠峰全程的电影，也是华语电影史上“最高难度”的纪录片——创下在8470米以上最高海拔完成无人机起飞航拍的新纪录。观众将跟随镜头“空降”珠峰攀登现场，与这群不甘平凡的普通人一起，为心中的热爱疯狂一次。",
+                "filmType": {
+                    "name": "2D",
+                    "value": 1
+                },
+                "nation": "中国大陆",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1652400000,
+                "timeType": 3,
+                "runtime": 83,
+                "item": {
+                    "name": "2D",
+                    "type": 1
+                },
+                "isPresale": false,
+                "isSale": false
+            },
+            {
+                "filmId": 5916,
+                "name": "新灰姑娘2",
+                "poster": "https://pic.maizuo.com/usr/movie/41a23e0bc5896e78777a0d3247308f32.jpg",
+                "actors": [
+                    {
+                        "name": "爱丽丝·布莱哈特",
+                        "role": "导演",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/6d43b3ebf40eea8b0e7a9f667a73409c.jpg"
+                    },
+                    {
+                        "name": "蒋丽",
+                        "role": "艾 拉",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/4ae6fd3988f8cd011366bf91bea793db.jpg"
+                    },
+                    {
+                        "name": "邵敏佳",
+                        "role": "莉 莉",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/e5b7ed0517bd8d673b87d8958bf8bfcb.jpg"
+                    },
+                    {
+                        "name": "赵路",
+                        "role": "痩鼠曼尼",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/09439815e94d6c5577a68fb4b0924acd.jpg"
+                    },
+                    {
+                        "name": "王和逸",
+                        "role": "胖鼠沃尔特",
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/e934ea82b775ea976b67bdfecf4ff80d.jpg"
+                    }
+                ],
+                "director": "爱丽丝·布莱哈特",
+                "category": "动画",
+                "synopsis": "为了帮助王子艾利克斯解开魔咒，灰姑娘艾拉带着魔法师莉莉，以及沃尔特和曼尼两只老鼠朋友再度出发寻找生命宝石，但朋友莉莉却在冒险中为了保护艾拉而牺牲，拿回生命宝石的艾拉面临着一个选择，究竟是帮助王子，还是救回朋友？",
+                "filmType": {
+                    "name": "2D",
+                    "value": 1
+                },
+                "nation": "中国大陆",
+                "language": "",
+                "videoId": "",
+                "premiereAt": 1654041600,
+                "timeType": 3,
+                "runtime": 90,
+                "item": {
+                    "name": "2D",
+                    "type": 1
+                },
+                "isPresale": false,
+                "isSale": false
+            },
+            {
+                "filmId": 3451,
+                "name": "阿凡达2",
+                "poster": "https://pic.maizuo.com/usr/movie/c5da4eddf824824c21f42aebd4f4120f.jpg",
+                "actors": [
+                    {
+                        "name": "萨姆·沃辛顿",
+                        "role": "杰克·萨利",
+                        "avatarAddress": "https://pic.maizuo.com/usr/100003451/df050071a829cb47d7612e1e4c3f8b37.jpg"
+                    },
+                    {
+                        "name": "佐伊·索尔达娜",
+                        "role": "奈蒂莉",
+                        "avatarAddress": "https://pic.maizuo.com/usr/100003451/a457d0e419128720688a6d11712db4b4.jpg"
+                    },
+                    {
+                        "name": "西格妮·韦弗",
+                        "role": "格蕾丝·奥格斯",
+                        "avatarAddress": "https://pic.maizuo.com/usr/100003451/2ebc1d29d21743c960de288930921814.jpg"
+                    },
+                    {
+                        "name": "史蒂芬·朗",
+                        "role": "迈尔斯·夸奇上校",
+                        "avatarAddress": "https://pic.maizuo.com/usr/100003451/368a975d10ee8e0bf30b5d5906fb6527.jpg"
+                    }
+                ],
+                "director": "詹姆斯·卡梅隆",
+                "category": "动作|科幻|奇幻|冒险",
+                "synopsis": "《阿凡达2》的剧情承接自第一部的5年之后。曾经的地球残疾军人杰克·萨利，如今已经是潘多拉星球纳美族一方部族的族长，并且与爱妻娜塔莉共同育有一对可爱的儿女，日子过得平淡而充实。然而某天，有个部族的兄弟在海岸附近巡逻时遭到利器割喉身亡。通过现场勘查，以及作为前海军陆战队员的敏锐直觉，杰克判断已经有人类的阿凡达混入了部落……",
+                "filmType": {
+                    "name": "2D",
+                    "value": 1
+                },
+                "nation": "美国",
+                "language": "英语",
+                "videoId": "",
+                "premiereAt": 1671321600,
+                "timeType": 3,
+                "runtime": 90,
+                "item": {
+                    "name": "2D",
+                    "type": 1
+                },
+                "isPresale": false,
+                "isSale": false
+            }
+        ],
+        "total": 5
+    },
+    "msg": "ok"
+}

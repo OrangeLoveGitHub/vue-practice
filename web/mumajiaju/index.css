@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #1f1f1f;
+}
+
+.page-wrapper{
+    padding-top: 64px;
+    padding-bottom: 488px;
+    min-height: 100%;
+}
+
+.app-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 64px;
+    z-index: 12;
+    background-color: #fafafa;
+    color:#1f1f1f
+}
+
+.container{
+    max-width: 1270px;
+    margin:auto
+}
+.app-header .logo-box{
+    float: left;
+    display: inline-block;
+    width: 156px;
+    height: 64px;
+    position: relative;
+}
+
+.app-header .logo-box .bg-logo{
+    width: 156px;
+    height: 41px;
+    background-image: url("/Users/lulu/workspace/person/github/vue-practice/web/mumajiaju/muma-log.png");
+    background-size: cover;
+    background-position: 50%;
+}
+.abs.abs-center{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.abs{
+    position: absolute;
+}
+.app-header .nav-left{
+    float: left;
+}
+
+.app-header .nav-box{
+    margin-left: 50px;
+    float: left;
+    height: 64px;
+    display: inline-block;
+    line-height: 64px;
+}
+
+.app-header .nav-box .nav-item a {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    padding: 10px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.app-header .nav-box .nav-item {
+    float: left
+}
+
+.app-header .nav-box .nav-item.active a{
+    font-weight: 600;
+}
+
+.app-header .nav-box .nav-item .icon-slash{
+    vertical-align: middle;
+    margin: 0 10px;
+    width: 15px;
+}
+
+.app-header .nav-right{
+    float: right;
+}
+
+.app-header .nav-right .no-login{
+    display: inline-block;
+}
+
+.app-header .nav-right .no-login .login-btn{
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    display: inline-block;
+    text-align: center;
+}
+.app-header .nav-right .no-login .register-btn{
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    display: inline-block;
+    text-align: center;
+}
+
+.page-case {
+    padding-top: 60px;
+}
+
+.section-case-recommend{
+    margin-bottom: 60px;
+}
+.oval{
+    border: 4px solid #c19a77;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.title{
+    font-family: "SourceHanSerifSC-bold",SimSun;
+    font-weight: 700;
+    font-size: 24px;
+    color: #1f1f1f;
+    margin-top: 5px;
+}

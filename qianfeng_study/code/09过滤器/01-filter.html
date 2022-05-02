@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../lib/vue.js"></script>
+    <script src="../lib/axios.js"></script>
+    <style>
+        li {
+            overflow: hidden;
+            list-style: none;
+            padding: 10px;
+        }
+
+        li img {
+            float: left;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <button @click="handleAjax">click-ajax</button>
+        <ul>
+            <li v-for="item in datalist" :key="item.filmId">
+                <img :src="item.poster | imgFilter">
+                {{item.name}}
+
+            </li>
+        </ul>
+
+    </div>
+
+    <script>
+        Vue.filter("imgFilter", () => {
+            return "https://archives.bulbagarden.net/media/upload/4/4d/Ash_Gengar.png "
+        })
+        new Vue({
+            el: "#app",
+            data: {
+                datalist: [],
+            },
+            methods: {
+                handleAjax() {
+                    axios.get("./json/maizuo.json").then(res => {
+                            console.log(res.data.data.films)
+                            this.datalist = res.data.data.films
+                        }
+
+                    )
+                },
+                // handleImg() {}
+            }
+        })
+    </script>
+
+</body>
+
+</html>

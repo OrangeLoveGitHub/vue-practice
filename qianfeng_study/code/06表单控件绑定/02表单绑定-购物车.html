@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../lib/vue.next.js"></script>
+    <style>
+        li {
+            display: flex;
+            justify-content: sapce-around;
+            padding: 10px;
+        }
+
+        li img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="app">
+        <input type="checkbox" v-model="isAll" @change="handleAllCheck">全选/全不选
+        <ul>
+            <li v-for="(data,index) in datalist" :key="data.id">
+                <input type="checkbox" v-model="checklist" :value="data" @change="handleDealLen">
+                <img :src="data.pic">
+                <div>
+                    <div>{{data.name}}</div>
+                    <div style="color: red;">${{data.price}}</div>
+                </div>
+                <div>
+                    <button @click="data.number--" :disabled="data.number===1">-</button>
+                    <span>{{data.number}}</span>
+                    <button @click="data.number++" :disabled="data.number===data.limit">+</button>
+                </div>
+                <div>
+                    <button @click="handleDeleteClick(index,data.id)">删除</button>
+                </div>
+            </li>
+        </ul>
+        <div>总计: {{ sum() }}</div>
+        {{checklist}}
+
+    </div>
+
+    <script>
+        var obj = {
+            data() {
+                return {
+                    isAll: false,
+                    checklist: [], //勾选的购物车的数据
+                    datalist: [{
+                            name: "商品1",
+                            price: 10,
+                            id: 1,
+                            number: 1,
+                            limit: 20,
+                            pic: "https://i0.wp.com/thegamehaus.com/wp-content/uploads/2021/07/Pikachu_Ketchup.PNG.png?resize=585%2C436&ssl=1"
+                        },
+                        {
+                            name: "商品2",
+                            price: 20,
+                            id: 2,
+                            number: 1,
+                            limit: 10,
+                            pic: "https://cdn.shopify.com/s/files/1/1355/1401/products/pokemon-go-gengar-decal-sticker_1024x1024.jpg?v=1570918255"
+                        },
+                        {
+                            name: "商品3",
+                            price: 50,
+                            id: 3,
+                            number: 2,
+                            limit: 10,
+                            pic: "https://cdn.shopify.com/s/files/1/1355/1401/products/pokemon-go-gengar-decal-sticker_1024x1024.jpg?v=1570918255"
+                        },
+
+                    ],
+                    isDelete: true
+                }
+            },
+            methods: {
+                sum() {
+                    var total = 0
+                    //累加计算checklist的总价
+                    this.checklist.forEach(item => {
+                        total += item.price * item.number
+                    })
+                    return total
+                },
+                handleDeleteClick(index, id) {
+                    // console.log(this.datalist[index])
+                    this.datalist.splice(index, 1)
+                    //删除checklist靠id 
+                    this.checklist = this.checklist.filter(item => item.id !== id)
+
+                },
+                handleAllCheck() {
+                    //this.isAll = true
+                    // console.log(this.isAll)
+                    if (this.isAll) {
+                        this.checklist = this.datalist
+                    } else {
+                        this.checklist = []
+                    }
+
+                },
+                handleDealLen() {
+                    if (this.checklist.length === this.datalist.length) {
+                        this.isAll = true
+                    } else {
+                        this.isAll = false
+                    }
+                }
+            },
+        }
+        Vue.createApp(obj).mount("#app")
+    </script>
+</body>
+
+</html>

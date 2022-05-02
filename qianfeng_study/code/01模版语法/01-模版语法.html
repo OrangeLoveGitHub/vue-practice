@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yellow{
+            background-color: burlywood;
+        }
+        .red{
+            background-color: black;
+        }
+    </style>
+    <script src="../lib/vue.js"></script>
+</head>
+<body>
+    <div id = "box">
+        {{myname}}-{{myage}}
+        <div :class="whichcolor">切换背景色</div>
+        <div :class="isColor?'red':'yellow'">循环切换背景色</div>
+        <button @click="handleChange()">change</button>
+        <button @click="colorChange()">change color</button>
+       <!-- v-show v-if 指令-->
+       <div v-show="isShow">我是动态显示和隐藏</div>
+       <ul>
+           <li v-for="(item,index) in list">
+               {{index}}. {{item}}
+           </li>
+
+       </ul>
+    </div>
+    <script>
+        new Vue({
+            el: "#box",
+            data:{
+                myname: "lugoo",
+                myage: 20,
+                whichcolor: "yellow",
+                isColor: true,
+                isShow: false,
+                list: ['pikachu','gengar']
+            },
+            //方法
+            methods: {
+                handleChange(){
+                    console.log("hangleChange")
+                    this.myage=18
+                },
+                colorChange(){
+                    this.whichcolor="red"
+                    this.isColor=!this.isColor
+                    this.isShow = !this.isShow
+
+                }
+            },
+        })
+    </script>
+</body>
+</html>
